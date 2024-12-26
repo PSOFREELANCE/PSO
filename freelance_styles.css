@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -20,7 +20,7 @@ nav {
     flex-direction: column;
 }
 .navbar-brand {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 2rem;
     font-weight: bold;
     border: 2px ridge #007bff;
@@ -264,7 +264,7 @@ nav {
 
 /* Services Page Styling */
 .design-hero {
-    background-image: url("hero_image.jpg");
+    background-image: url("..hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ nav {
     border-radius: 10px;
 }
 .development-hero {
-    background-image: url("hero_image.jpg");
+    background-image: url("..hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ nav {
 
 /* Portfolio Page Styling */
 .portfolio-hero {
-    background-image: url("hero_image.jpg");
+    background-image: url("..hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
