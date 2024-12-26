@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -264,7 +264,7 @@ nav {
 
 /* Services Page Styling */
 .design-hero {
-    background-image: url("../images/hero_image.jpg");
+    background-image: url("hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ nav {
     border-radius: 10px;
 }
 .development-hero {
-    background-image: url("../images/hero_image.jpg");
+    background-image: url("hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ nav {
 
 /* Portfolio Page Styling */
 .portfolio-hero {
-    background-image: url("../images/hero_image.jpg");
+    background-image: url("hero_image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
