@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#007bff">
     <meta name="rating" content="General">
     <meta name="distribution" content="global">
-        <title>Services/Web Development - PSO Freelance</title>
+        <title>Curriculum Vitae - PSO Freelance</title>
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="freelance_styles.css">
         <!-- Bootstrap 5.3.3 -->
@@ -46,12 +46,118 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
         <!-- JavaScript Files -->
         <script src="script.js"></script>
-<style>
-    
-</style>
+    <style>
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background: linear-gradient(145deg, #1e293b, #2d3748);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .resume-container {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            transform: scale(1) translateZ(0);
+            transition: transform 0.5s ease;
+        }
+        /*.resume-container:hover {
+            transform: scale(1.02);
+        }*/
+        .header {
+            text-align: center;
+            background: linear-gradient(145deg, #007bff, #6610f2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .header img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .info-item i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+        i:hover {
+            transform: scale(1.5);
+            transition: transform 0.1s ease;
+            color: orangered;
+        }
+        .stars .fa-star {
+            color: orange;
+        }
+        .stars .fa-star:hover {
+            color: skyblue;
+            transform: translateX(10px);
+        }
+        .buttons button {
+            background: linear-gradient(145deg, #007bff, #6610f2);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 30px;
+            font-size: 1rem;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.2);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 30px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        ul li:hover {
+            transform: scale(1.1);
+            transition: transform 0.4s ease;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        }
+    </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -106,226 +212,279 @@
     </div>
     </div>
 </nav>
-  <header class="cv-header">
-    <img src="ps.jpg" alt="Pardeep Singh">
-    <div class="cv-header-info">
-      <h1>Pardeep Singh</h1>
-      <p>Freelance Web Designer & Developer</p>
-    </div>
-  </header>
-  <div class="cv-container">
-    <aside class="cv-sidebar">
-      <h3><i class="fa-solid fa-person-chalkboard"></i> Personal Info</h3>
-      <ul>
-        <li><i class="fa-solid fa-phone"></i> +91-7988717234</li>
-        <li><i class="fa-solid fa-envelope"></i> psofreelance2019@gmail.com</li>
-        <li><i class="fa-solid fa-map-marker-alt"></i> Sonipat, Haryana</li>
-      </ul>
-      <hr>
-      <h3><i class="fa-solid fa-arrows-to-dot"></i> Soft Skills</h3>
-      <ul>
-        <li><i class="fa-solid fa-user"></i> Communication</li>
-        <li><i class="fa-solid fa-users"></i> Teamwork</li>
-        <li><i class="fa-solid fa-lightbulb"></i> Problem-Solving</li>
-      </ul>
-      <hr>
-      <h3><i class="fa-solid fa-globe"></i> Languages</h3>
-      <ul>
-        <li><i class="fa-solid fa-language"></i> Hindi
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
-        <li><i class="fa-solid fa-language"></i> English
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></li>
-        <li><i class="fa-solid fa-language"></i> Russian
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i></li>
-      </ul>
-      <hr>
-      <h3><i class="fa-solid fa-icons"></i> Hobbies</h3>
-      <ul>
-        <li><i class="fa-solid fa-music"></i> Listening Devotional Songs</li>
-        <li><i class="fa-solid fa-person-walking"></i> Walking</li>
-        <li><i class="fa-solid fa-brain"></i> Learning New Technologies</li>
-      </ul>
-    </aside>
-    <main class="cv-main">
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-person-dots-from-line"></i> Professional Summary</h2>
-        <p class="cv-style">Dynamic and creative freelance web designer and developer with <strong>+5</strong> years of experience. Proven track record in designing visually appealing and user-friendly websites, proficient in Front-End and Back-End development, with a strong focus on responsive design. Adept at collaborating with clients to bring their vision to life and achieve their business goals.</p>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-school"></i> Education Qualification</h2>
-        <ul>
-          <li class="cv-style"><i class="fa-solid fa-arrow-right-to-bracket"></i> 10th from Government Boys Senior Secondary School, Murthal (Sonipat) HR.</li>
-          <li class="cv-style"><i class="fa-solid fa-arrow-right-to-bracket"></i> 12th from Government Boys Senior Secondary School, Murthal (Sonipat) HR.</li>
-        </ul>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Academic Qualification</h2>
-        <ul>
-          <li class="cv-style"><i class="fa-solid fa-building-columns"></i> BCA from Maharishi Dayanand University Rohtak, Haryana -124001.</li>
-          <li class="cv-style"><i class="fa-solid fa-building-columns"></i> MCA from Deenbandhu Chhotu Ram University of Science & Technology Murthal, Sonipat Haryana - 131039.</li>
-        </ul>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-tornado"></i> Key Skills</h2>
-        <ul>
-          <li class="cv-style"><strong>Web Design</strong> <i class="fa-solid fa-laptop"></i>:  HTML, CSS, JavaScript</li>
-          <li class="cv-style"><strong>Web Development</strong> <i class="fa-solid fa-laptop-code"></i>: PHP, Python, Java</li>
-          <li class="cv-style"><strong>CMS</strong> <i class="fa-solid fa-house-laptop"></i>: WordPress, Joomla, Drupal</li>
-          <li class="cv-style"><strong>UX/UI Design</strong> <i class="fa-solid fa-paint-brush"></i>: Figma, Pencil, Sketch</li>
-          <li class="cv-style"><strong>Version Control</strong> <i class="fa-solid fa-layer-group"></i>: Git, GitHub</li>
-          <li class="cv-style"><strong>Database</strong> <i class="fa-solid fa-database"></i>: MySQL, MongoDB, Oracle</li>
-          <li class="cv-style"><strong>MIS </strong> <i class="fa-brands fa-microsoft"></i>: Excel, Word, PowerPoint, Access</li>
-        </ul>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
-        <h4>Freelance Web Designer & Developer</h4>
-        <h6><span><i class="fa-solid fa-globe"></i> Bharat(India)</span> <span>[May 2019</span> - <span>Present]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Collaborated with clients to gather requirements and develop projects scopes.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Designed and developed customized websiites using modern web technologies.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Ensured website compatibility across various browsers and devices.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Implemented SEO strategies to improve website visibility and search rankings.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Provided ongoing maintenance and updates for client websites.</li>
-          </ul>
-        </p>
-        <h4>Web & Software Developer</h4>
-        <h6><span><i class="fa-solid fa-globe"></i> Narela, Delhi</span> <span>[April 2015</span> - <span>August 2017]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> Developed and maintained client websites and softwares with cutting-edge designs.</li>
-          </ul>
-        </p>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-shop me-2"></i> Hospitality Experience</h2>
-        <h4>Kesar</h4>
-        <h5> - Cashier/Account</h5>
-        <h6> <span><i class="fa-solid fa-globe"></i> Jhattiput, Samalkha, Panipat</span> <span>[March 2018</span> - <span>June 2020]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 1. Manage Cash Transactions efficiently, ensuring accurate records.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 2. Balance daily accounts and maintained financial records.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 3. Provided excellent customer service and handled inquiries.</li>
-          </ul>
-        </p>
-        <h4>Grills & Carry</h4>
-        <h5> - Cashier/Account</h5>
-        <h6> <span><i class="fa-solid fa-globe"></i> Samalkha, Panipat</span> <span>[August 2020</span> - <span>March 2021]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 1. Performed Cashier duties, handle cash and card transactions.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 2. Maintained accurate financial records and reports.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 3. Assisted with customer queries and provided support.</li>
-          </ul>
-        </p>
-        <h4>Urban Punjab</h4>
-        <h5> - Lead Cashier/Account</h5>
-        <h6> <span><i class="fa-solid fa-globe"></i> Gannaur, Murthal</span> <span>[May 2021</span> - <span>December 2022]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 1. Led the cashier team, managed cash and accounting operations.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 2. Oversaw daily financial transactions and reconciliations.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 3. Ensure high standards of customer service and satisfaction.</li>
-          </ul>
-        </p>
-        <h4>OH Ten Spoon Restaurant</h4>
-        <h5> - Senior Cashier/Account</h5>
-        <h6> <span><i class="fa-solid fa-globe"></i> Samalkha, Panipat</span> <span>[February 2023</span> - <span>July 2024]</span></h6>
-        <p>
-          <ul>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 1. Supervised cashier operations and maintained financial accuracy.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 2. Managed accounting records and reconciliations.</li>
-            <li class="cv-style"><i class="fa-solid fa-diamond-turn-right"></i> 3. Provided exceptional service, enhancing customer experience.</li>
-          </ul>
-        </p>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-check-to-slot"></i> Notable Projects</h2>
-        <h4>Restaurant Website Template</h4>
-        <p class="cv-style"><strong>Description:</strong> A responsive restaurant website template designed to showcase restaurant menus, daily specials, and reservation options. The template is built using HTML, CSS, and JavaScript, ensuring compatibility across various devices and browsers.</p>
-        <h5>Key Features:</h5>
-        <ul class="cv-style">
-          <li><strong>Responsive Design:</strong> Ensure a seamless user experience on desktops, tablets, and smartphones.</li>
-          <li><strong>Menu Display:</strong> Allows restaurants to list their menu items with descriptions and prices.</li>
-          <li><strong>Reservation System:</strong> Enables customers to make reservations online.</li>
-          <li><strong>Daily Specials:</strong> Highlights daily specials to attract more customers.</li>
-          <li><strong>Contact Info:</strong> Provides easy access to contact details, including phone numbers, and email addresses.</li>
-        </ul>
-        <br>
-        <h4>Employee Management System</h4>
-        <p class="cv-style"><strong>Description:</strong> A comprehensive employee management system developed using Java, designed to streamline HR processes such as employee information storage, payroll management, and performance tracking.</p>
-        <h5>Key Features:</h5>
-        <ul class="cv-style">
-          <li><strong>Emp Info:</strong> Stores employee details such as names, contact information, job titles, and departments.</li>
-          <li><strong>Payroll Management:</strong> Manages payroll processes, including salary calculations and deductions.</li>
-          <li><strong>Performance Tracking:</strong> Tracks employee performance and generates reports for reviews.</li>
-          <li><strong>User-Friendly Interface:</strong> provides an intuitive GUI for easy navigation and data entry.</li>
-          <li><strong>Database Integration:</strong> Uses JDBC to connect to a MySQL database for efficient data management.</li>
-        </ul>
-      </div>
-      <hr> 
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-laptop-file"></i> Training</h2>
-        <h4>Industrial Training at 'CRIS'</h4>
-        <h5><strong>Project:</strong> E-Rail Ticket</h5>
-        <h6> <span><i class="fa-solid fa-globe"></i> Chanakyapuri, New Delhi</span></h6>
-        <h6> <span><i class="fa-solid fa-hourglass-start"></i> [January 2014</span> - <span>July 2014]</span></h6>
-        <h5>Overview:</h5>
-        <p class="cv-style">During this 6 month industrial training at the Center For Railways Information Systems (CRIS) in Chanakyapuri, New Delhi, I had the opportunity to work on a real-time project titled <strong>"E-Rail Ticket"</strong>. The aim of this project was develop a comprehensive online ticketing system for railways, leveraging cutting-edge web technologies and database management systems to enhance user experience and operational efficiency.</p>
-        <h5>Project Objective:</h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 1. <strong>Steamline Ticket Booking:</strong> To create an intuitive platform for users to book train ticket easily.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 2. <strong>Real-Time Availability:</strong> Impliment real-time tracking of seat availability and booking status.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 3. <strong>User Authentication:</strong> Secure user registration and login functionalities.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 4. <strong>Payment Gateway Integration:</strong> Enable secure and multiple payment options for users.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 5. <strong>Ticket Management:</strong> Provide features for booking history, ticket cancellation, and refunds.</li>
-        </ul>
-        <h5>Technologies Implemented:</h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 1. <strong>JSP (JavaServer Pages):</strong> Utilized to create dynamic web pages and manage user interactions.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 2. <strong>Hibernate:</strong> Used for database operations, ensuring seamless communication between the application and Oracle 10 database.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 3. <strong>HTML & CSS:</strong> Employed for structuring and styling the web pages to enhance user interface and experience.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 4. <strong>Oracle 10:</strong> Served as the robust backend database for storing user data, booking details, and transaction records.</li>
-          <li><i class="fa-solid fa-diamond-turn-right"></i> 5. <strong>JavaScript:</strong> Incorporated to add interactive elements and improve user engagement on the web application.</li>
-        </ul>
-      </div>
-      <hr>
-      <div class="cv-section">
-        <h2><i class="fa-solid fa-trophy"></i> Achievements</h2>
-        <h4>Academic and Technical Accomplishments</h4>
-        <h5><strong>1. Inter College Web Development Competition:</strong></h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> Achieved <strong>second</strong> place in a highly competitive inter college web development compitition, showcasing skills in HTML, CSS, JavaScript, and Web design principles.</li>
-        </ul>
-        <h5><strong>2. 1<sup>st</sup> in College Activities:</strong></h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> Consistently excelled in various college activities, including tech fests, hackathons, and coding competitions, earning the top position and recognition among peers and faculty.</li>
-        </ul><br>
-        <h4>Sports Achivements</h4>
-        <h5><strong>1. Two Times 1<sup>st</sup> Place in School State Football Championships:</strong></h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> Led the school football team to victory twice in the state championships, demonstrating exceptional athletic abilities, teamwork, and leadership on the field.</li>
-        </ul>
-        <h5><strong>2. First Place in Open Inter Village Athlete Championship:</strong></h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> Secured the <strong>First</strong> position in the 100 meter race at the Open Inter Village Athlete championship, showcasing speed, endurance, and competitive spirit.</li>
-        </ul>
-        <h5><strong>3. Second Place in School State Athlete Championship:</strong></h5>
-        <ul class="cv-style">
-          <li><i class="fa-solid fa-diamond-turn-right"></i> Secured the <strong>second</strong> position in the 400 meter race at the school state Athlete championship, showcasing speed, endurance, and competitive spirit.</li>
-        </ul>
-      </div>
-    </main>
-  </div>
+  <div class="container mt-5">
+        <div class="resume-container">
+            <!-- Header -->
+            <div class="header">
+                <img src="https://via.placeholder.com/120" alt="PARDEEP SINGH">
+                <h1>PARDEEP SINGH</h1>
+                <p>WEB DSIGNER & DEVELOPER</p>
+            </div>
 
+            <!-- Main Content -->
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <!-- Personal Info -->
+                    <h2 class="section-title"><i class="fa-solid fa-person-chalkboard"></i> Contact</h2>
+                    <div class="info-item">
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> psofreelance2019@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91 7988 717 234</li>
+                        <li><i class="fa-solid fa-map-marker-alt"></i> Sonipat (131001), Delhi (110009), Bharat</li>
+                        <li><i class="fa-solid fa-globe"></i> psofreelance.github.io/PSO/</li>
+                    </ul>
+                    </div><hr>
+                    <!-- Soft Skills -->
+                    <h2 class="section-title"><i class="fa-solid fa-arrows-to-dot"></i> Soft Skills</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i> Communication</li>
+                        <li><i class="fa-solid fa-users"></i> Teamwork</li>
+                        <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
+                    </ul>
+                    <hr>
+                    <!-- Languages -->
+                    <h2 class="section-title"><i class="fa-solid fa-language"></i> Languages</h2>
+                    <ul>
+                        <li>Hindi: <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></li>
+                        <li>English: <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></li>
+                        <li>Russian: <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></li>
+                    </ul>
+                    <hr>
+                    <!-- Hobbies -->
+                    <h2 class="section-title"><i class="fa-solid fa-icons"></i> Hobbies</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-music"></i> Listening Devotional Songs</li>
+                        <li><i class="fa-solid fa-walking"></i> Walking</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Learning New Technologies</li>
+                    </ul>
+                    <hr>
+                    <!-- Social Links -->
+                    <h2 class="section-title"><i class="fa-brands fa-slack"></i> Social Links</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp"></i> WhatsApp</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                        <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                        <li><i class="fa-brands fa-linkedin"></i> LinkedIn</li>
+                    </ul>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-8">
+                    <!-- Professional Summary -->
+                    <h2 class="section-title"><i class="fa-solid fa-person-dots-from-line"></i> Professional Summary</h2>
+                    <p>Dynamic and creative freelance web designer and developer with <strong>+5</strong> years of experience. Proven track record in designing visually appealing and user-friendly websites, proficient in Front-End and Back-End development, with a strong focus on responsive design. Adept at collaborating with clients to bring their vision to life and achieve their business goals.</p>
+
+                    <!-- Education -->
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education Qualification</h2>
+                    <ul>
+                        <li>B.C.A (Bachelor of Computer Application), Maharshi Dayanand University, Rohtak - 124001, (2007-2010) with 63.70% (1<sup>st</sup> Division).</li>
+                        <li>M.C.A (Master of Computer Application), Deenbandhu Chhotu Ram University of Science & Technology, Murthal (Sonipat) - 131039, (2007-2010) with 6.8 CGPA ~ 68% (1<sup>st</sup> Division).</li>
+                    </ul>
+
+                    <!-- Academic Qualification -->
+                    <h2 class="section-title"><i class="fa-solid fa-landmark"></i> Academic Qualification</h2>
+                    <ul>
+                        <li>10<sup>th</sup> (Metriculation), Government Senior Secondary School, Murthal (Sonipat) (2002-2003) with 54.83% (2<sup>nd</sup> Division).</li>
+                        <li>12<sup>th</sup> (Senior Secondary), Government Senior Secondary School, Murthal (Sonipat) (2005-2006) with 6.40 GPA ~ 64% (1<sup>st</sup> Division).</li>
+                    </ul>
+
+                    <!-- Professional Skills -->
+                    <h2 class="section-title"><i class="fa-brands fa-stripe-s"></i><i class="fa-brands fa-kickstarter-k"></i> Professional Skills</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-code"></i> <strong>Web Design</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                    <div class="progress-bar">HTML 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                    <div class="progress-bar bg-success">CSS 90%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <div class="progress-bar bg-info">JS 68%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-laptop-code"></i> <strong>Web Development</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <div class="progress-bar">PHP 75%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Python" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                    <div class="progress-bar bg-success">Python 88%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Java" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <div class="progress-bar bg-info">Java 90%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-pencil-alt"></i> <strong>CMS</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="WordPress" aria-valuenow="33.33" aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                                    <div class="progress-bar">WordPress 83%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Joomla" aria-valuenow="33.33" aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                                    <div class="progress-bar bg-success">Joomla 83%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Drupal" aria-valuenow="33.33" aria-valuemin="0" aria-valuemax="100" style="width: 33.33%">
+                                    <div class="progress-bar bg-info">Drupal 83%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-drafting-compass"></i> <strong>UX/UI Design</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="Figma" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <div class="progress-bar">Figma 95%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Pencil" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                    <div class="progress-bar bg-success">Pencil 90%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Sketch" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                    <div class="progress-bar bg-info">Sketch 90%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-code-branch"></i> <strong>Version Control</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="Git" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                    <div class="progress-bar">Git 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="GitHub" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                    <div class="progress-bar bg-success">GitHub 100%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-database"></i> <strong>Database</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="MySQL" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                    <div class="progress-bar">MySQL 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Oracle" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                    <div class="progress-bar bg-success">Oracle 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="MongoDB" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                    <div class="progress-bar bg-info">MongoDB 90%</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chart-bar"></i> <strong>Management Information System(MIS)</strong>
+                            <div class="progress-stacked">
+                                <div class="progress" role="progressbar" aria-label="Excel" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <div class="progress-bar">Excel 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Word" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <div class="progress-bar bg-success">Word 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Access" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <div class="progress-bar bg-info">Access 100%</div>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="PowerPoint" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                                    <div class="progress-bar">PowerPoint 100%</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Professional Experience -->
+                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
+                        <p><strong>Freelance Web Designer & Developer</strong>
+                            <h6><span><i class="fa-solid fa-globe"></i> Bharat(India)</span> <span>[May 2019</span> - <span>Present]</span></h6>
+                            <p>
+                                <ul>
+                                    <li>1. Collaborated with clients to gather requirements and develop projects scopes.</li>
+                                    <li>2. Designed and developed customized websiites using modern web technologies.</li>
+                                    <li>3. Ensured website compatibility across various browsers and devices.</li>
+                                    <li>4. Implemented SEO strategies to improve website visibility and search rankings.</li>
+                                    <li>5. Provided ongoing maintenance and updates for client websites.</li>
+                                </ul>
+                            </p>
+                        </p>
+                        <p><strong>Web & Software Developer</strong>
+                            <h6><span><i class="fa-solid fa-globe"></i> Sai Web World Pvt. Ltd. Narela, Delhi</span> <span>[April 2015</span> - <span>August 2017]</span></h6>
+                            <p>
+                                <ul>
+                                    <li>1. Developed and maintained client websites and softwares with cutting-edge designs.</li>
+                                </ul>
+                            </p>
+                        </p>
+
+                    <!-- Hospitality Experience -->
+                    <h2 class="section-title"><i class="fa-solid fa-square-h"></i> Hospitality Experience</h2>
+                    <ul>
+                        <li><strong>Kesar</strong> - Cashier/Account, Jhattipur, Samalkha (March 2018 - June 2020)</li>
+                        <li><strong>Grills & Carry</strong> - Cashier/Account, Samalkha (August 2020 - March 2021)</li>
+                        <li><strong>Urban Punjab</strong> - Lead Cashier/Account, Gannaur, Murthal (May 2021 - December 2022)</li>
+                        <li><strong>OH Ten Spoon</strong> - Senior Cashier/Account, Samalkha (February 2023 - July 2024)</li>
+                    </ul>
+
+                    <!-- Notable Projects -->
+                    <h2 class="section-title"><i class="fa-solid fa-check-to-slot"></i> Notable Projects</h2>
+                    <h4>1. Restaurant Website Template</h4>
+                        <p><strong>Description:</strong> A responsive restaurant website template designed to showcase restaurant menus, daily specials, and reservation options. The template is built using HTML, CSS, and JavaScript, ensuring compatibility across various devices and browsers.</p>
+                    <h5>Key Features:</h5>
+                        <ul>
+                            <li><strong>I. Responsive Design:</strong> Ensure a seamless user experience on desktops, tablets, and smartphones.</li>
+                            <li><strong>II. Menu Display:</strong> Allows restaurants to list their menu items with descriptions and prices.</li>
+                            <li><strong>III. Reservation System:</strong> Enables customers to make reservations online.</li>
+                            <li><strong>IV. Daily Specials:</strong> Highlights daily specials to attract more customers.</li>
+                            <li><strong>V. Contact Info:</strong> Provides easy access to contact details, including phone numbers, and email addresses.</li>
+                        </ul>
+                    <h4>2. Employee Management System</h4>
+                        <p><strong>Description:</strong> A comprehensive employee management system developed using Java, designed to streamline HR processes such as employee information storage, payroll management, and performance tracking.</p>
+                    <h5>Key Features:</h5>
+                        <ul>
+                            <li><strong>I. Emp Info:</strong> Stores employee details such as names, contact information, job titles, and departments.</li>
+                            <li><strong>II. Payroll Management:</strong> Manages payroll processes, including salary calculations and deductions.</li>
+                            <li><strong>III. Performance Tracking:</strong> Tracks employee performance and generates reports for reviews.</li>
+                            <li><strong>IV. User-Friendly Interface:</strong> provides an intuitive GUI for easy navigation and data entry.</li>
+                            <li><strong>V. Database Integration:</strong> Uses JDBC to connect to a MySQL database for efficient data management.</li>
+                        </ul>
+
+                    <!-- Training -->
+                    <h2 class="section-title"><i class="fa-solid fa-user-gear"></i> Training</h2>
+                    <h4>Industrial Training at 'CRIS'</h4>
+                        <h5><strong>Project:</strong> E-Rail Ticket</h5>
+                            <h6> <span><i class="fa-solid fa-globe"></i> Chanakyapuri, New Delhi</span></h6>
+                            <h6> <span><i class="fa-solid fa-hourglass-start"></i> [January 2014</span> - <span>July 2014]</span></h6>
+                        <h5>Overview:</h5>
+                            <p class="cv-style">During this 6 month industrial training at the Center For Railways Information Systems (CRIS) in Chanakyapuri, New Delhi, I had the opportunity to work on a real-time project titled <strong>"E-Rail Ticket"</strong>. The aim of this project was develop a comprehensive online ticketing system for railways, leveraging cutting-edge web technologies and database management systems to enhance user experience and operational efficiency.</p>
+                        <h5>Project Objective:</h5>
+                            <ul>
+                                <li>1. <strong>Steamline Ticket Booking:</strong> To create an intuitive platform for users to book train ticket easily.</li>
+                                <li>2. <strong>Real-Time Availability:</strong> Impliment real-time tracking of seat availability and booking status.</li>
+                                <li>3. <strong>User Authentication:</strong> Secure user registration and login functionalities.</li>
+                                <li>4. <strong>Payment Gateway Integration:</strong> Enable secure and multiple payment options for users.</li>
+                                <li>5. <strong>Ticket Management:</strong> Provide features for booking history, ticket cancellation, and refunds.</li>
+                            </ul>
+                        <h5>Technologies Implemented:</h5>
+                            <ul>
+                                <li>1. <strong>JSP (JavaServer Pages):</strong> Utilized to create dynamic web pages and manage user interactions.</li>
+                                <li>2. <strong>Hibernate:</strong> Used for database operations, ensuring seamless communication between the application and Oracle 10 database.</li>
+                                <li>3. <strong>HTML & CSS:</strong> Employed for structuring and styling the web pages to enhance user interface and experience.</li>
+                                <li>4. <strong>Oracle 10:</strong> Served as the robust backend database for storing user data, booking details, and transaction records.</li>
+                                <li>5. <strong>JavaScript:</strong> Incorporated to add interactive elements and improve user engagement on the web application.</li>
+                            </ul>
+
+                    <!-- Achievements -->
+                    <h2 class="section-title"><i class="fa-solid fa-award"></i> Achievements</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-certificate"></i> 2<sup>nd</sup> place in Inter College Web Development Competition.</li>
+                        <li><i class="fa-solid fa-trophy"></i> 2 times 1<sup>st</sup> place in School State Football Championships.</li>
+                        <li><i class="fa-solid fa-medal"></i> 1<sup>st</sup> place in Open Inter-Village Athletics Championship.</li>
+                        <li><i class="fa-solid fa-running"></i> 2<sup>nd</sup> place in School State Athletics Tournament.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Footer Section -->
