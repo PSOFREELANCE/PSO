@@ -123,20 +123,36 @@
             color: skyblue;
             transform: translateX(10px);
         }
-        .buttons button {
-            background: linear-gradient(145deg, #007bff, #6610f2);
-            border: none;
+        .print btn {
+            display: block;
+            margin: 20px auto;
             padding: 10px 20px;
-            color: white;
-            border-radius: 30px;
-            font-size: 1rem;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease-in-out;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            text-align: center;
+            max-width: 200px;
+            text-decoration: none;
         }
-        .buttons button:hover {
-            transform: translateY(-5px);
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.2);
+        /* Print Specific Style */
+        @media print {
+            body {
+                background: white;
+                color: black;
+                margin: 0;
+            }
+            .header, .navbar, .footer, .print-btn {
+                display: none !important;
+            }
+            .resume-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
         }
         ul {
             list-style: none;
@@ -212,6 +228,9 @@
     </div>
     </div>
 </nav>
+        <!-- Print Button -->
+    <button class="print-btn" onclick="printResume()">Print CV as PDF</button>
+        
   <div class="container mt-5">
         <div class="resume-container">
             <!-- Header -->
@@ -485,6 +504,12 @@
             </div>
         </div>
     </div>
+        <script>
+        // Function to print the Resume
+        function printResume() {
+            window.print();
+        }
+    </script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Footer Section -->
